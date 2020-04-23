@@ -180,7 +180,7 @@ export default {
             technologies: 'HTML, CSS, JS'
           },
           folder: 'home-handling',
-          github: 'https://github.com/DleiaDev/homehandling',
+          github: false,
           link: 'https://homehandling.com'
         }
       ]
@@ -212,6 +212,14 @@ export default {
       $(`.slider__item--${slideIndex} .more-info`).css('display', 'block')
     },
     moreInformation(project) {
+      var github = '';
+      if (project.github)
+        github = `
+        <a href="${project.github}" target="_blank">
+          GitHub
+          <i class="fab fa-github icon"></i>
+        </a>`;
+
       var html = `
       <div class="info">
         <h3>${project.title}</h3>
@@ -273,10 +281,7 @@ export default {
           Visit Website
           <i class="fas fa-arrow-right icon"></i>
         </a>
-        <a href="${project.github}" target="_blank">
-          GitHub
-          <i class="fab fa-github icon"></i>
-        </a>
+        ${github}
       </div>`;
 
       $('#more-info-modal .modal-body').html(html)
