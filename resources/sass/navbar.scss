@@ -1,0 +1,96 @@
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+#navbar #logo {
+  display: flex;
+}
+#navbar #logo .icon {
+  font-size: 2.8vw;
+  color: $color-primary;
+}
+#navbar #logo div {
+  margin-left: 0.3vw;
+  display: flex;
+  flex-direction: column;
+}
+#navbar #logo div .name {
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+#navbar #logo div .desc {
+  font-size: 0.8vw;
+  line-height: 0.5;
+}
+#navbar .links {
+  display: flex;
+  align-items: center;
+}
+#navbar .links a {
+  display: block;
+  color: $color-text;
+  font-weight: normal;
+  padding: 0 1vw;
+  font-size: 1vw;
+  text-decoration: none;
+  transition: 0.2s;
+}
+#navbar .links a:hover {
+  color: $color-primary;
+}
+#navbar .links a .icon {
+  font-size: 1.7vw;
+}
+
+// 1440px
+@media (max-width: 1440px) {
+  #navbar #logo .icon {
+    font-size: 40px;
+  }
+  #navbar #logo div {
+    margin-left: 5px;
+  }
+  #navbar #logo div .name {
+    font-size: 18px;
+  }
+  #navbar #logo div .desc {
+    font-size: 12px;
+  }
+  #navbar .links a {
+    padding: 0 12px;
+    font-size: 15px;
+  }
+  #navbar .links a .icon {
+    font-size: 25px;
+  }
+}
+
+// 767px
+@media (max-width: 767px) {
+  #navbar .container {
+    max-width: 100%;
+  }
+}
+
+// 576px
+@media (max-width: 576px) {
+  #navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar #logo .icon {
+    font-size: 50px;
+  }
+  #navbar #logo div .name {
+    font-size: 21px;
+  }
+  #navbar #logo div .desc {
+    font-size: 13px;
+  }
+  #navbar .links {
+    margin-top: 20px;
+  }
+  #navbar .links a {
+    font-size: 18px;
+  }
+}

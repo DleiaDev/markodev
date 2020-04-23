@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.009" height="44" viewBox="0 0 39.009 44">
+  <g id="photoDirection_Left" transform="translate(-614.99 -542)">
+    <path id="bg" d="M615,542h33a6,6,0,0,1,6,6v32a6,6,0,0,1-6,6H615C614.985,586.005,614.99,542.049,615,542Z" fill="#fff"/>
+    <path id="left" d="M9.76,22.66a.48.48,0,0,1-.38-.18L0,11.33,9.38.18a.5.5,0,0,1,.76.64L1.31,11.33l8.83,10.51a.5.5,0,0,1-.38.82Z" transform="translate(628.991 553)" fill="#333"/>
+  </g>
+</svg>

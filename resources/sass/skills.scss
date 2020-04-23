@@ -1,0 +1,161 @@
+#skills {
+  padding: 5vw 0;
+}
+#skills > h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2vw;
+  width: 28vw;
+  padding: 0.5vw;
+  background-color: $color-primary;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+#skills .row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 4vw;
+}
+#skills .skill {
+  width: 20vw;
+  text-align: center;
+}
+#skills .skill p {
+  margin-bottom: 0;
+}
+#skills .skill .image {
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 10vw;
+  height: 10vw;
+  margin: 0 auto;
+  margin-bottom: 1vw;
+}
+#skills #php .image,
+#skills #wordpress .image,
+#skills #deployment .image {
+  background-size: 100%;
+}
+
+// APIs
+#skills .apis {
+  padding-top: 2vw;
+}
+#skills .apis h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8vw;
+  margin-bottom: 2vw;
+}
+#skills .api {
+  width: 15vw;
+  text-align: center;
+}
+#skills .api .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 7vw;
+  height: 7vw;
+  margin: 0 auto;
+  margin-bottom: 0.8vw;
+}
+
+// 1440px
+@media (max-width: 1440px) {
+  #skills {
+    padding: 60px 0;
+  }
+  #skills > h2 {
+    font-size: 25px;
+    width: 360px;
+    padding: 7px;
+    margin-bottom: 70px;
+  }
+  #skills .row {
+    margin-bottom: 60px;
+  }
+  #skills .skill {
+    width: 250px;
+  }
+  #skills .skill .image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  #skills .apis {
+    padding-top: 25px;
+  }
+  #skills .apis h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  #skills .api {
+    width: 160px;
+  }
+  #skills .api .image {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+  }
+}
+
+// 767px
+@media (max-width: 767px) {
+  #skills > h2,
+  #skills .apis h2 {
+    padding: 0;
+    background: none;
+    color: inherit;
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  #skills .row {
+    margin-bottom: 0;
+  }
+  #skills .skill {
+    width: 200px;
+  }
+  #skills .skill .image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  #skills .skill h3,
+  #skills .api h3 {
+    font-size: 18px;
+  }
+  #skills .skill p,
+  #skills .api p {
+    font-size: 12px;
+  }
+
+  #skills .apis {
+    padding-top: 70px;
+  }
+  #skills .api .image {
+    background-size: 75%;
+  }
+
+}
+
+// 425px
+@media (max-width: 425px) {
+  #skills .skill {
+    width: 175px;
+  }
+  #skills .skill .image,
+  #skills .api .image {
+    margin-bottom: 0;
+    width: 90px;
+  }
+  #skills .skill p,
+  #skills .api p {
+    font-size: 11px;
+  }
+}

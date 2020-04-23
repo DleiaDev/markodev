@@ -1,0 +1,322 @@
+#projects {
+  background-color: $color-primary;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+}
+#projects h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2vw;
+  width: 20vw;
+  padding: 0.5vw;
+  background-color: white;
+  color: $color-primary-dark;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+#projects > p {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  display: none;
+}
+#projects > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slider__holder {
+  margin-top: 0;
+  max-width: none;
+}
+.slider .slider__item {
+  @extend %shadow;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  transition: all 0.5s ease;
+}
+.slider .slider__item .carousel-item {
+  width: 60vw;
+  height: 32.5vw !important;
+}
+.slider .slider__item .carousel-item div {
+  height: 100%;
+  background-size: cover;
+  background-position: right;
+  image-rendering: -webkit-optimize-contrast;
+}
+.slider .bullets__item {
+  width: 1vw;
+  height: 1vw;
+  margin: 0 .4vw;
+  border-radius: 50%;
+}
+
+#projects .slider__item .more-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.8vw 0;
+  background-color: #44327d;
+  color: white;
+  transition: 0.2s;
+  display: none;
+}
+#projects .slider__item.active .more-info {
+  display: block;
+}
+#projects .slider__item .more-info:hover {
+  background-color: #5c44a6;
+}
+#projects .slider__item .more-info .icon {
+  margin-left: 1vw;
+}
+
+#slide-1:checked ~ .slider__holder .slider__item--2 {
+  transform: translateX(17vw) scale(0.85);
+}
+#slide-2:checked ~ .slider__holder .slider__item--1 {
+  transform: translateX(-17vw) scale(0.85);
+}
+#slide-2:checked ~ .slider__holder .slider__item--3 {
+  transform: translateX(17vw) scale(0.85);
+}
+#slide-3:checked ~ .slider__holder .slider__item--2 {
+  transform: translateX(-17vw) scale(0.85);
+}
+#slide-3:checked ~ .slider__holder .slider__item--4 {
+  transform: translateX(17vw) scale(0.85);
+}
+#slide-4:checked ~ .slider__holder .slider__item--3 {
+  transform: translateX(-17vw) scale(0.85);
+}
+#slide-4:checked ~ .slider__holder .slider__item--5 {
+  transform: translateX(17vw) scale(0.85);
+}
+#slide-5:checked ~ .slider__holder .slider__item--4 {
+  transform: translateX(-17vw) scale(0.85);
+}
+#slide-5:checked ~ .slider__holder .slider__item--6 {
+  transform: translateX(17vw) scale(0.85);
+}
+#slide-6:checked ~ .slider__holder .slider__item--5 {
+  transform: translateX(-17vw) scale(0.85);
+}
+
+.modal-dialog {
+  max-width: 25vw;
+}
+.modal-content {
+  @extend %shadow;
+  border-radius: 0;
+  border: none;
+}
+.modal-body {
+  padding: 0;
+}
+.modal-body .info {
+  padding: .5vw 0 .5vw 1vw;
+  background-color: $color-primary;
+  color: white;
+}
+.modal-body h3 {
+  font-size: 1.5vw;
+  margin-bottom: 0.2vw;
+  font-weight: bold;
+}
+.modal-body p {
+  margin-bottom: 0;
+}
+.modal-body .tech {
+  padding: 1vw;
+}
+.modal-body .tech > div {
+  margin-bottom: 0.8vw;
+}
+.modal-body .flex {
+  display: flex;
+  align-items: center;
+}
+.modal-body .dot {
+  width: 0.75vw;
+  height: 0.75vw;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 0.5vw;
+}
+.modal-body .bt .dot {
+  background-color: #28A745;
+}
+.modal-body .db .dot {
+  background-color: #44327D;
+}
+.modal-body .bf .dot {
+  background-color: #DC3545;
+}
+.modal-body .bc .dot {
+  background-color: #DC3545;
+}
+.modal-body .ft .dot {
+  background-color: #007BFF;
+}
+.modal-body .ff .dot {
+  background-color: #17A2B8;
+}
+.modal-body .apis .dot {
+  background-color: #FFC107;
+}
+.modal-body .text {
+  padding-left: 1.25vw;
+  font-size: 0.85vw;
+}
+.modal-body .buttons {
+  display: flex;
+}
+.modal-body .buttons a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  background-color: #44327d;
+  padding: 0.5vw 0;
+  text-decoration: none;
+  font-size: 1.1vw;
+  transition: 0.2s;
+}
+.modal-body .buttons a:hover {
+  background-color: $color-primary;
+}
+.modal-body .buttons .icon {
+  margin-left: 0.5vw;
+}
+
+#projects .carousel-wrapper {
+  display: none;
+}
+#projects #carousel-projects img {
+  max-width: 100%;
+}
+#projects .carousel-control-prev {
+  justify-content: flex-start;
+  opacity: 1;
+}
+#projects .carousel-control-next {
+  justify-content: flex-end;
+  opacity: 1;
+}
+
+// 1440px
+@media (max-width: 1440px) {
+  #projects {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+  #projects h2 {
+    font-size: 25px;
+    width: 260px;
+    padding: 8px;
+    margin-bottom: 60px;
+  }
+
+  .slider .slider__item .more-info {
+    padding: 13px 0;
+  }
+  .slider .slider__item .more-info .icon {
+    margin-left: 12px;
+  }
+  .slider .bullets__item {
+    width: 14px;
+    height: 14px;
+    margin: 0 7px;
+  }
+
+  #projects .modal-dialog {
+    max-width: 320px;
+  }
+  #projects .modal-body .info {
+    padding: 10px 0 10px 15px;
+  }
+  #projects .modal-body h3 {
+    font-size: 22px;
+    margin-bottom: 3px;
+  }
+  #projects .modal-body .tech {
+    padding: 15px;
+  }
+  #projects .modal-body .tech > div {
+    margin-bottom: 10px;
+  }
+  #projects .modal-body .dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+  }
+  #projects .modal-body .text {
+    padding-left: 18px;
+    font-size: 13px;
+  }
+  #projects .modal-body .buttons a {
+    padding: 9px;
+    font-size: 16px;
+  }
+  #projects .modal-body .buttons .icon {
+    margin-left: 9px;
+  }
+}
+
+// 767px
+@media (max-width: 767px) {
+  #projects {
+    padding: 0;
+    padding-bottom: 60px;
+    background-color: white;
+  }
+  #projects h2 {
+    padding: 0;
+    background: none;
+    color: inherit;
+    width: auto;
+    margin-bottom: 15px;
+  }
+  #projects > p {
+    display: block;
+    max-width: 375px;
+  }
+
+  #projects .carousel-wrapper {
+    display: block;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  #projects #carousel-projects {
+    display: block;
+  }
+  #projects #carousel-projects button {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  #projects .slider {
+    display: none;
+  }
+}
+
+// 576px
+@media (max-width: 576px) {
+  #projects #carousel-projects button {
+    width: 275px;
+    font-size: 17px;
+  }
+}
+
+// 425px
+@media (max-width: 425px) {
+  #projects > p {
+    max-width: 90%;
+  }
+}
